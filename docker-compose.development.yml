@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    development-ui:
+        environment:
+            - TZ=Europe/Zurich
+        build:
+            context: .
+            dockerfile: docker/development.Dockerfile
+        ports:
+            - 8080:8080

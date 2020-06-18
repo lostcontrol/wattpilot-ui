@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    wattpilot-ui:
+        environment:
+            - TZ=Europe/Zurich
+        build:
+            context: .
+            dockerfile: docker/runtime.Dockerfile
+        ports:
+            - 8081:80
